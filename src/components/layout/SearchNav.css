@@ -1,0 +1,248 @@
+/* SearchNav.css */
+.search-nav {
+  background-color: #f8f9fa; /* Fondo claro */
+  padding: 10px 0;
+  height: 50px;
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para el efecto 3D */
+  transform: translateY(2px); /* Desplazamiento para efecto 3D */
+  transition: transform 0.3s; /* Transición suave */
+  
+}
+
+/* Contenedor principal del navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
+/* Estilo del logo */
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  padding-bottom: 25px;
+}
+
+/* Botón de hamburguesa */
+.navbar-toggler {
+  margin-bottom: 35px;
+  background: #93f9f195;
+  border: none;
+  font-size: 1px;
+  cursor: pointer;
+  margin: end;
+  padding: 0; /* Eliminar padding para que solo el icono esté visible */
+  display: flex; /* Usar flex para centrar la imagen dentro del botón */
+  justify-content: center; /* Centrar la imagen */
+  align-items: center; /* Alinear la imagen verticalmente */
+  width: 20px; /* Ajusta el tamaño del botón según el tamaño del icono */
+  height: 20px; /* Ajusta el tamaño del botón según el tamaño del icono */
+  
+}
+
+/* Asegurarse de que la imagen del icono se ajuste correctamente */
+.navbar-toggler-icon {
+  width: 50px; /* Ajusta el tamaño del icono */
+  height: 50px; /* Ajusta el tamaño del icono */
+  object-fit: contain; /* Asegura que la imagen no se distorsione */
+  
+}
+
+
+/* Campo de búsqueda centrado */
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.search-input {
+  width: 70%; /* Ajusta el tamaño del campo de búsqueda */
+  height: 40%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1.5px solid #81f8f4;
+  margin: 0; /* Elimina margen extra */
+  justify-content: center;
+  align-items: center; /* Centra el icono dentro del botón */
+
+ 
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 50px; /* Ajusta el tamaño del botón según el tamaño del icono */
+  height: 50px; 
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra el icono dentro del botón */
+  padding-bottom: 40px;
+  
+}
+
+.search-button .search-icon {
+  width: 40px;
+  height: 40px;
+  
+}
+
+/* Offcanvas (menú lateral) */
+.offcanvas {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Inicialmente fuera de la pantalla */
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  transition: right 0.4s ease-in-out;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* Asegúrate de que el offcanvas esté encima del contenido */
+}
+
+.offcanvas.open {
+  right: 0; /* Mueve el offcanvas a la vista */
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  background-color: #0f0e0e97;
+}
+
+.offcanvas-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.btn-close {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-bottom: 10px;
+
+}
+
+/* Estilos para el menú y dropdown */
+
+.offcanvas-body{
+  background-color: #81f8f4ab;
+  padding-top: 5px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  padding: 10px;
+}
+
+
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 17px;
+}
+
+.nav-link:hover {
+  color: #e166c8;
+}
+
+.dropdown-menu {
+  list-style-type: none;
+  padding: 0;
+  display: none; /* Ocultar el submenú por defecto */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f6dbfc;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  
+}
+
+
+/* Mostrar el submenú cuando tiene la clase 'show' */
+.dropdown.show .dropdown-menu {
+  display: block; /* Muestra el submenú */
+}
+
+/* Los elementos de menú */
+.dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #464545;
+  display: block; /* Asegura que el padding afecte solo el área de cada enlace */
+  
+}
+
+.dropdown-item:hover {
+  background-color: #f37cdb3f;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #d3cfcf;
+}
+
+
+
+
+
+/* Estilo para el enlace "Contáctanos" */
+.navbar-brand {
+  font-size: 18px;                            /* Tamaño de fuente adecuado para que no sobresalga */
+  font-weight:700;                           /* Peso de fuente semi-negrita para darle énfasis */
+ /* color: #00bcd4;                             /* Color brillante pero no tan agresivo */
+  /*text-decoration: none;                  /* Eliminar subrayado predeterminado */
+  padding: 5px 5px 25px;                          /* Espaciado interno más pequeño */
+  transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para el cambio de color y movimiento */
+
+  background: linear-gradient(90deg, #f37cdb, #58f8f8); /* Gradiente rosa a azul */
+  color: transparent; /* Hacer que el color del texto sea transparente */
+
+ 
+  -webkit-background-clip: text; /* Aplicar el gradiente solo al texto */
+  background-clip: text; /* Propiedad estándar para otros navegadores */
+  text-decoration: none; /* Eliminar subrayado del enlace */
+
+}
+
+/* Efecto hover: Cambia solo el color y agrega un sutil movimiento */
+.navbar-brand:hover {
+  color: #feb9f4;                                /* Cambia el texto a blanco al pasar el ratón */
+  transform: translateY(-2px);                /* Leve movimiento hacia arriba para dar interactividad */
+}
+
+/* Efecto focus: Asegurar visibilidad al hacer clic */
+.navbar-brand:focus {
+  outline: none;                              /* Elimina el contorno predeterminado */
+  color:  #B8860B;                                /* Mantén el texto blanco para mayor visibilidad */
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 14px;                          /* Reduce el tamaño de la fuente en dispositivos pequeños */
+    padding: 4px 8px;                         /* Reduce el padding para que se ajuste mejor */
+  }
+}

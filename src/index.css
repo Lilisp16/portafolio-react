@@ -1,0 +1,917 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.layout{
+  width: 85%;
+  margin: 0 auto;
+  background-image: linear-gradient(-225deg, #e3fdf59b 0%, #FFE6FA 100%);
+  /*background-image: url('../public/images/fondo6.jpg'); /* Ajusta la ruta */
+  background-size: cover; /* Ajusta la imagen al contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.header{
+  display: flex;
+  border-radius: 0 0px 10px 10px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 80px;
+  background: #373d43;
+  margin-bottom: 10px;
+  position: relative; /* Necesario para el efecto 3D */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para el efecto 3D */
+  transform: translateY(2px); /* Desplazamiento para efecto 3D */
+  transition: transform 0.3s; /* Transición suave */
+}
+
+.header h2{
+  color: white;
+}
+
+
+/* Borde inferior con efecto rayo */
+.header::after {
+  content: '';
+  position: absolute;
+  left: 0.3%;
+  bottom: 0;
+  width: 99.4%;
+  height: 4px; /* Altura del borde */
+  border-radius: 0 0 5px 5px;
+  background: linear-gradient(90deg, rgb(248, 248, 90), #00ffff96); /* Gradiente de colores */
+  box-shadow: 
+    0 0 10px rgba(255, 255, 0, 1), /* Resplandor amarillo */
+    0 0 20px rgba(255, 165, 0, 1), /* Resplandor naranja */
+    0 0 30px rgba(36, 215, 247, 0.5); /* Resplandor azul */
+}
+
+
+.header:hover {
+  transform: translateY(0); /* Elimina el desplazamiento al pasar el mouse */
+}
+
+.header .logo{
+   flex-grow: 2;
+   display: flex;
+   padding-left: 5px;
+}
+
+
+.header .logo .by {
+  width: 70px; /* Ajusta el tamaño del logo */
+  height: 70px; /* Asegúrate de que la imagen sea cuadrada */
+  animation: rotateLogo 5s linear infinite; /* Aplica la animación de rotación */
+  transform-origin: center; /* Establece el centro del logo como el punto de rotación */
+}
+
+/* Animación del giro */
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg); /* Comienza sin rotación */
+  }
+  100% {
+    transform: rotate(360deg); /* Gira 360 grados */
+  }
+}
+
+
+.header .logo h3 {
+  display: block;
+  font-size: 12px;
+  color: white;
+  font-weight: lighter;
+  padding-top: 20px;
+  margin-right: 20px;
+
+}
+
+.header nav{
+  flex-grow: 1;
+}
+
+.header nav ul{
+  height: 132px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.header li{
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.header li a{
+  color: #00FFFF;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.header .active,
+.header a:hover{
+  color: #B8860B; /* oro*/
+}
+
+
+.by{
+  display: block;
+  width: 80px;
+ padding-bottom: 4px;
+}
+
+
+
+
+/* AQUI CODIGO PARA EL MOVIMIENTO */
+
+@keyframes lightningEffect {
+  0% {
+    background-position: -200% 0; /* Comienza fuera de la vista a la izquierda */
+  }
+  100% {
+    background-position: 200% 0; /* Termina fuera de la vista a la derecha */
+  }
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  left: 0.3%;
+  bottom: 0;
+  width: 99.4%;
+  height: 4px; /* Altura del borde */
+  border-radius: 0 0 5px 5px;
+  background: linear-gradient(90deg, rgba(248, 248, 90, 1), rgba(0, 255, 255, 1), rgba(248, 248, 90, 1));
+  background-size: 300% 100%; /* Asegura que haya suficiente ancho para el movimiento */
+  box-shadow: 
+    0 0 10px rgba(255, 255, 0, 1), /* Resplandor amarillo */
+    0 0 20px rgba(255, 165, 0, 1), /* Resplandor naranja */
+    0 0 30px rgba(36, 215, 247, 0.5); /* Resplandor azul */
+  animation: lightningEffect 1s linear infinite; /* Ajusta la velocidad de la animación */
+}
+
+
+
+
+
+.content {
+  min-height: 400px;
+}
+
+.home h1{
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-weight: 300;
+   font-size: 60px;
+   margin-bottom: 0px;
+   margin-top: 80px;
+}
+
+.home strong {
+   color:#01e3e3;
+}
+
+.home h2{
+  color: rgb(80, 78, 78);
+  font-weight: lighter;
+}
+
+.home a{
+  padding: 6px;
+  border-radius: 6px;
+  font-weight:bold;
+  color: #02bebe;
+  text-decoration: none;
+  transition: all 300ms;
+  padding-bottom: 8px;
+  font-size: 15px;
+}
+
+.home a:hover,
+input[type="submit"]:hover,
+button{
+  color: #B8860B;
+}
+
+.page .heading,
+.home .heading{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.page .heading{
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(101, 99, 99);
+}
+
+
+.home p{
+  color: rgb(78, 76, 76);
+}
+
+/* codigo para el formulario */
+
+input[type="text"],
+textarea{
+  padding: 15px;
+  margin-top: 25px;
+  width: 100%; /* Usa el 100% del contenedor padre */
+  max-width: 250px; /* Establece un ancho máximo si es necesario */
+  background-color: rgba(255, 255, 255, 0.452); /* Color de fondo con transparencia */
+  border: none; /* Sin borde por defecto */
+  border-bottom: 2px solid transparent; /* Borde inferior transparente por defecto */
+  transition: border-color 300ms; /* Suave transición para el cambio de color */
+  outline: none; /* Elimina el contorno predeterminado al enfocar */
+  border-radius: 5px; /* Esquinas redondeadas */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 2px solid #02bebe; /* Cambia el color del borde inferior al enfocar */
+}
+ 
+
+
+input[type="submit"],
+button{
+  font-size: 15px;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight:bold;
+  background-color: #07dbdb;
+  text-decoration: none;
+  transition: all 300ms;
+  border: none; /* Elimina los bordes */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar efecto de profundidad */
+  transition: all 0.3s; /* Suave transición para efectos */
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más intensa al hacer hover */
+  transform: translateY(-2px); /* Levanta el botón al pasar el mouse */
+}
+
+input[type="submit"]:active {
+  transform: translateY(0); /* Restaura la posición al hacer clic */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reducida al hacer clic */
+}
+
+
+
+.contact{
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  width: 40%;
+  border-radius: 20px;
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 20px; /* Agrega un poco de espacio interno */
+}
+
+.contact h4{
+  margin-left: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: center; /* Centra horizontalmente los elementos */
+}
+
+/*TARJETAS DE CONTACTO*/
+
+/* Estilo general para las tarjetas */
+.tarjetas {
+ /* background-color: #f9f9f9; /* Color de fondo de las tarjetas */
+  padding: 15px; /* Espaciado interno en las tarjetas */
+  margin: 0 0px; /* Margen horizontal entre tarjetas */
+  flex: 1; /* Permite que las tarjetas se expandan uniformemente */
+  min-width: 250px; /* Establece un ancho mínimo para las tarjetas */
+}
+
+/* Contenedor de tarjetas */
+.tarjetas-container {
+  display: flex; /* Alinear tarjetas en fila */
+  justify-content: center; /* Centrar tarjetas */
+  align-items: stretch; /* Asegurar que las tarjetas tengan la misma altura */
+  margin-bottom: 20px; /* Espacio entre las tarjetas y el formulario */
+  border-bottom: 1px solid #02bebe9c; /* Cambia el color y grosor según desees */
+  padding-bottom: 20px;
+}
+
+
+/* Espaciado entre el título y las tarjetas */
+.page .heading {
+  margin-bottom: 20px; /* Espacio entre el encabezado y las tarjetas */
+  margin-left: 10px;
+  text-decoration: underline; /* Subrayado */
+  text-decoration-color: rgba(88, 231, 244, 0.612); /* Color azul para el subrayado */
+  font-size: 2em; /* Asegúrate de que el tamaño de fuente sea el adecuado */
+}
+
+/* Si quieres que funcione con un h1 o h2 específicos, usa estas clases */
+
+.page .heading h1 {
+  text-decoration: underline; /* Subrayado */
+  text-decoration-color: rgb(96, 243, 240); /* Color azul */
+}
+
+
+
+/* codigo formulario */
+
+/* Contenedor para .formulario y .contact */
+.grupoform {
+  display: flex; /* Usamos Flexbox para alinearlos en una fila */
+  justify-content: space-between; /* Separa los elementos en el contenedor */
+  align-items: flex-start; /* Alinea los elementos al inicio (verticalmente) */
+  gap: 20px; /* Añade espacio entre los dos elementos */
+  padding-bottom: 20px;
+}
+
+
+.contact {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3a4 100%);
+  width: 35%;
+  border-radius: 20px;
+  margin: 10px auto; /* Centra el formulario */
+  padding: 15px; /* Espaciado interno */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para el efecto 3D */
+  transform: translateY(2px); /* Desplazamiento para efecto 3D */
+  transition: transform 0.3s; /* Transición suave */
+}
+
+
+
+.contact:hover {
+  transform: translateY(0); /* Elimina el desplazamiento al pasar el mouse */
+}
+
+.contact h3{
+  color:  rgb(101, 99, 99);;
+}
+
+/* Estilo para la tarjeta uno */
+.tarjetas.uno {
+  border-right: 1px solid #02bebe9c; /* Cambia el color y grosor según desees */
+}
+
+
+/*FORMULARIO */
+
+.formulario {
+  width: 450px;
+  padding-top: 40px;
+}
+.formulario img{
+  width: 450px;
+  height: 320px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.formulario p{
+  margin-left: 10px;
+  font-size: 20px;
+  color: #01d1d1;
+  font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+  overflow: hidden; /* Oculta el texto antes de que se "escriba" */
+  border-right: .08em solid #01d1d1; /* Simula el cursor de la máquina de escribir */
+  white-space: nowrap; /* El texto no se ajusta a la siguiente línea */
+  width: 0; /* El texto comienza oculto */
+  animation: typing 5s steps(40) 1s infinite normal, blink-caret 0.75s step-end infinite; /* Animaciones */
+}
+
+/* Animación de máquina de escribir */
+@keyframes typing {
+  0% {
+    width: 0; /* El texto comienza oculto */
+  }
+  100% {
+    width: 100%; /* El texto se escribe completamente */
+  }
+}
+/* Animación del cursor que parpadea */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent; /* El cursor parpadea */
+  }
+  100% {
+    border-color: #01d1d1; /* El cursor vuelve a aparecer */
+  }
+}
+
+
+
+
+
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 768px) {
+  .tarjetas-container {
+    flex-direction: column; /* Cambia a columna en dispositivos pequeños */
+  }
+}
+
+
+.works{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-item{
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin: 30px;
+}
+
+.work-item .mask{
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0px 5px 14px  #ddd;
+}
+
+.work-item img{
+  width: 120%;
+  transition: all 500ms;
+}
+
+.work-item .mask:hover img{
+  width: 150%;
+  margin-right: 30%;
+}
+
+
+/*ESTILO PARA EL TEXTO DE PORTAFOLIO*/
+.work-item h2{
+  display: block;
+  font-size: 25px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.work-item a {
+  color: #01d1d1;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+.work-item a:hover{
+  color:  #B8860B;
+  
+}
+
+.work-item h3{
+  display: block;
+  color: gray;
+  margin-top: 0px;
+  border-top: 1px solid #ddd
+}
+
+
+
+/*FOOTER*/
+
+.footer{
+  min-height: 40px;
+  line-height: 7px;
+  font-size: 14px;
+  border-top: 1px solid black;
+  background: #f5f5f5;
+  color: #444;
+  display: flex; /* Asegura que los elementos se distribuyan correctamente */
+  justify-content: space-between; /* Distribuye los elementos a los lados */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 10px; /* Agrega algo de espacio dentro del footer */
+}
+
+.language-selector{
+  display: flex;
+  text-align: left;
+  flex-grow: 1; /* Para que ocupe el espacio restante y empuje el siguiente contenedor hacia la derecha */
+}
+
+.language-selector span {
+  text-align: left; /* Asegura que el texto "Portafolio Lili Sanchez" esté alineado a la izquierda */
+  margin-right: auto; /* Empuja el texto hacia la izquierda */
+}
+
+
+
+/*FOOTER0*/
+
+
+.footer0{
+  background:  #f5f5f5;
+  line-height: 7px;
+  font-size: 14px;
+  /*margin-top: 35px;*/
+  padding-top: 20px;
+  border-top: 1px solid black;
+  color: rgb(70, 67, 67);
+  display: flex; /* Usar flexbox para la disposición */
+  justify-content: space-between; /* Espaciado entre columnas */
+  align-items: flex-start; /* Alinear al inicio en el eje vertical */
+  margin: 2px;
+}
+
+.footer-principal{
+  background: #f5f5f5;
+}
+
+.informacion {
+  margin: 5px;
+  display: flex; /* Usar flexbox para las listas */
+  gap: 20px; /* Espacio entre las listas */
+  justify-content: flex-start; /* Alinear el contenido de las listas a la izquierda */
+}
+
+.informacion .link2 {
+  justify-content: flex-start;
+}
+
+
+.informacion .nav-link2{
+  text-decoration: none;
+}
+.nav-link2 {
+  color:  rgb(92, 89, 89);;
+  font-size: 16px;
+  
+}
+
+
+.nav-link2:hover {
+  color:   #B8860B; /* Cambia el color al pasar el mouse */
+}
+
+.link {
+  list-style-type: none; /* Quitar puntos de las listas */
+  padding: 0; /* Quitar padding */
+  font-size: 15px;
+  margin: 0; /* Quitar margen */
+  display: flex; /* Usar flexbox para que los li estén en fila */
+  flex-direction: column; /* Alinear en columna */
+  padding-bottom: 100px;
+}
+
+.link li {
+  margin: 5px 0; /* Espacio entre cada li */
+}
+
+.todologo {
+  margin: 5px;
+  height: 80px;
+  display: flex; /* Usar flexbox para los logos */
+  gap: 10px; /* Espacio entre los logos */
+  
+}
+
+
+
+.logoa{
+  padding-top: 30px;
+  width: 100px;
+  right: auto;
+}
+
+.logob{
+  width: 30px;
+  height: 30px;
+}
+
+.logoc{
+  width: 180px;
+  right: auto;
+}
+
+
+
+
+
+
+/*Agregar el IDIOMA */
+
+.language-selector {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Centra el contenido dentro de custom-select */
+  /*padding-bottom: 20px;
+  margin-right: 20px;
+  padding-top: -10px;*/
+}
+
+.custom-select {
+  position: relative;
+  display: flex; /* Cambiamos a flex para mejor alineación */
+  
+}
+
+.language-icon {
+  position: absolute;
+  left: 5px; /* Ajusta según sea necesario */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px; /* Ajusta el tamaño del ícono */
+  pointer-events: none; /* Para que el clic pase al select */
+}
+
+.custom-select select {
+  padding: 8px 15px; /* Espaciado interno */
+  border: 1px solid #01e3e3; /* Borde del selector */
+  border-radius: 4px; /* Esquinas redondeadas */
+  background-color: #fff; /* Color de fondo */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el selector */
+  padding-right: 10px;
+}
+
+.custom-select select:hover {
+  border-color: #01e3e3; /* Cambia color del borde al pasar el ratón */
+}
+
+.custom-select select:focus {
+  outline: none; /* Quitar contorno al seleccionar */
+  border-color: #01e3e3; /* Color del borde al hacer foco */
+}
+
+
+
+
+
+
+/*CODIGO PARA CONTACTO ICONS*/
+.icon-contact {
+  width: 50PX;
+}
+
+
+/*CODIGO PARA MINIFOOTER*/
+
+.minifooter{
+  background: #373d43;
+  padding-bottom: 30px;
+
+}
+
+
+.minifooter .nav-link {
+  font-size: small;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: white;
+}
+
+
+.minifooter .nav-link:hover {
+  color:   #B8860B; /* Cambia el color al pasar el mouse */
+}
+
+.minifooter ul {
+  display: flex; /* Usa flexbox para alinear los elementos en fila */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  list-style-type: none; /* Quita los puntos de la lista */
+  padding: 0; /* Quita el padding por defecto */
+  margin: 0; /* Quita el margen por defecto */
+}
+
+
+.minifooter ul li {
+  margin-right: 15px; /* Ajusta este valor según necesites */
+}
+
+.minifooter ul li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+.nav-link {
+  color: white;
+  font-size: 20px;
+}
+
+
+.nav-link:hover {
+  color:   #B8860B; /* Cambia el color al pasar el mouse */
+}
+
+.page-work .mask{
+  height: 300px;
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #ddd;
+}
+
+.mask img{
+  align-items: center;
+}
+
+
+
+
+
+/*ESTILOS SUBSERVICIOS*/
+
+
+.service h2{
+  padding-left: 10px;
+
+}
+
+/* Eliminar los puntos de la lista */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+
+/* Estilo para los elementos principales */
+.offered {
+  list-style-type: none;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative; /* Necesario para las líneas */
+  padding-left: 20px;
+}
+
+/* Estilo para los subservicios */
+.subservicios {
+  padding-left: 60px;
+  margin-top: 10px;
+  position: relative; /* Necesario para las líneas */
+}
+
+/* Estilo para los elementos de la sublista */
+.subservicios li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+.subservicios li:last-child {
+  margin-bottom: 0; /* Elimina el margen inferior de la última lista */
+}
+
+
+
+/* lasts-works*/
+
+
+.lasts-works {
+  display: flex; /* Alinea los elementos en una fila */
+  gap: 20px; /* Espacio entre los elementos, puedes ajustarlo */
+  justify-content: center;      /* Centra los elementos horizontalmente */
+  align-items: center;          /* Centra los elementos verticalmente */
+  height: 100vh;                /* Asegura que la sección tenga suficiente altura (opcional, ajusta según necesidad) */
+
+}
+
+.lasts-works button:hover{
+  background-color: #f48bfa;
+}
+
+
+.pinicio, .freelancing {
+  flex: 1; /* Ambos ocupan un espacio igual dentro de la sección */
+  padding: 40px; /* Agrega espacio interno si es necesario */
+}
+
+.pinicio {
+  width: 400px;
+}
+
+.freelancing img{
+  width: 440px;
+  height: 400px;
+  border-radius: 10px;
+
+}
+
+
+/*CODIGO CARD*/
+
+.cardoff {
+  padding: 50px;
+  background-color:  #00ffff8f;
+  display: flex;
+  justify-content: space-around; /* Distribuye las tarjetas dentro de la sección */
+  flex-wrap: wrap; /* Permite que las tarjetas se acomoden en múltiples líneas si es necesario */
+}
+
+.cardoff-header {
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  text-align: center; /* Centra el título horizontalmente */
+  margin-bottom: 50px; /* Agrega espacio entre el título y las tarjetas */
+  margin-top: -25px;
+  padding-bottom: 30px;
+}
+
+.cardoff h2 {
+  margin: 0; /* Elimina el margen por defecto del título */
+}
+
+.card {
+  background-color: #373d43;
+  /*background-color:#fcd8fa;*/
+  display: flex;
+  flex-direction: column; /* Organiza los elementos de arriba hacia abajo */
+  align-items: center;    /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  width: 200px;           /* Ancho de la tarjeta */
+  padding: 5px;          /* Espaciado dentro de la tarjeta */
+  border: 1px solid #ddd; /* Borde de la tarjeta */
+  border-radius: 10px;    /* Bordes redondeados */
+  box-shadow: 4 8px 8px rgba(0, 0, 0, 0.162); /* Sombra suave */
+
+  position: relative;     /* Permite posicionar la imagen de manera absoluta dentro de la tarjeta */
+  overflow: visible;      /* Permite que la imagen sobresalga de los bordes de la tarjeta */
+  transition: all 0.3s ease; /* Suaviza la transición del efecto */
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+    transform: translateY(-10px); /* Levanta ligeramente la tarjeta */
+  }
+
+.card-image {
+  position: absolute;     /* Posiciona la imagen fuera de la tarjeta */
+  top: -60px;             /* Coloca la imagen fuera de la parte superior de la tarjeta */
+  left: 50%;
+  transform: translateX(-50%); /* Centra la imagen horizontalmente */
+ 
+ /* display: flex;*/
+ /* justify-content: center; /* Centra la imagen horizontalmente */
+ /* align-items: center;     /* Centra la imagen verticalmente */
+  width: 150px;            /* Ancho de la imagen */
+  height: 150px;           /* Alto de la imagen */
+ /* margin-bottom: 20px;     /* Espacio entre la imagen y el contenido debajo */
+  background-color: #f49ff075;
+  border-radius: 50%;      /* Radio de borde del 50% para que quede redondo */
+  padding: 5px;           /* Espaciado dentro de la caja */
+  box-sizing: border-box;  /* Asegura que el padding no afecte el tamaño total */
+}
+
+.card-image img {
+  width: 100%;   /* Asegura que la imagen ocupe todo el contenedor */
+  height: 100%;  /* Hace que la imagen tenga el mismo alto que su contenedor */
+  border-radius: 50%; /* Redondea la imagen para que sea circular */
+  object-fit: cover;  /* Asegura que la imagen se recorte adecuadamente */
+}
+
+.card-uno {
+  text-align: center; /* Centra el texto en el contenedor */
+  padding-top: 100px;   /* Da espacio suficiente para el contenido de texto debajo de la imagen flotante */
+}
+
+.card-uno h4 {
+  margin: 10px 0; /* Espaciado entre el título y el párrafo */
+ color: #f49ff0;
+}
+
+.card-uno p {
+  margin: 10px 0; /* Espaciado entre el párrafo y el enlace */
+  color: white;
+}
+
+.card-uno a {
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+  padding: 8px 30px; /* Espaciado interno del enlace */
+  background-color: #4ae4e4; /* Fondo color turquesa */
+  color: white; /* Color de texto blanco */
+  border-radius: 5px; /* Bordes redondeados en el botón */
+  text-align: center; /* Centra el texto dentro del enlace */
+ 
+}
+
+.card-uno a:hover {
+  background-color: #fcbbf9; /* Cambio de color de fondo al pasar el mouse */
+  text-decoration: none; /* Elimina el subrayado al hacer hover */
+}
+
