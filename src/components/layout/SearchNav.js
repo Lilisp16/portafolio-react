@@ -156,14 +156,14 @@ const handleResultClick = (id) => {
         </div>
         <div className="offcanvas-body">
           <ul className="navbar-nav">
-            <li className="nav-item"><a href="#service_h" className="nav-link">Hosting</a></li>
-            <li className="nav-item"><a href="#service_h" className="nav-link">Dominio</a></li>
+            <li className="nav-item"><a href="servicios#service_h" className="nav-link">Hosting</a></li>
+            <li className="nav-item"><a href="servicios#service_h" className="nav-link">Dominio</a></li>
             <li className={`nav-item dropdown ${isDropdownOpen ? 'show' : ''}`}>
               <a href="#" className="nav-link dropdown-toggle"  onClick={toggleDropdown}>Servicios</a>
               <ul className="dropdown-menu">
-                <li><a href="#service_dw" className="dropdown-item">Desarrollo WEb</a></li>
+                <li><a href="servicios#service_dw" className="dropdown-item">Desarrollo WEb</a></li>
                 <li><hr className="dropdown-divider" /></li>
-                <li><a href="#service_sgc" className="dropdown-item"> Sistema de Gestión Comercial</a></li>
+                <li><a href="servicios#service_sgc" className="dropdown-item"> Sistema de Gestión Comercial</a></li>
               </ul>
             </li>
           </ul>
