@@ -1,6 +1,7 @@
 /* SearchNav.css */
 .search-nav {
-  background-color: #f8f9fa; /* Fondo claro */
+ /* background-color: #f8f9fa; /* Fondo claro */
+ /*background-color:  rgba(184, 249, 248, 0.744);*/
   padding: 10px 0;
   height: 50px;
   position: relative;
@@ -27,9 +28,15 @@
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #212121;
   padding-bottom: 25px;
+    /* Sombra de texto */
+   /* Sombra de texto más difusa */
+  
 }
+
+
+
 
 /* Botón de hamburguesa */
 .navbar-toggler {
@@ -217,7 +224,7 @@
   padding: 5px 5px 25px;                          /* Espaciado interno más pequeño */
   transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para el cambio de color y movimiento */
 
-  background: linear-gradient(90deg, #f37cdb, #58f8f8); /* Gradiente rosa a azul */
+  background: linear-gradient(90deg, #c553ae, #2aa8a8); /* Gradiente rosa a azul */
   color: transparent; /* Hacer que el color del texto sea transparente */
 
  
@@ -229,7 +236,7 @@
 
 /* Efecto hover: Cambia solo el color y agrega un sutil movimiento */
 .navbar-brand:hover {
-  color: #feb9f4;                                /* Cambia el texto a blanco al pasar el ratón */
+  color: #b974af;                                /* Cambia el texto a blanco al pasar el ratón */
   transform: translateY(-2px);                /* Leve movimiento hacia arriba para dar interactividad */
 }
 
@@ -245,4 +252,63 @@
     font-size: 14px;                          /* Reduce el tamaño de la fuente en dispositivos pequeños */
     padding: 4px 8px;                         /* Reduce el padding para que se ajuste mejor */
   }
+}
+
+
+
+
+
+/*nueva configuracion 23 01 2025*/
+
+/* Ocultar el input por defecto */
+.search-input {
+  display: none;  /* Inicialmente oculto */
+  width: 0;       /* Ancho 0 para que no ocupe espacio */
+  opacity: 0;     /* Opacidad 0 para hacerlo invisible */
+  transition: all 0.3s ease;  /* Transición suave */
+}
+
+/* Estilo cuando el input es visible */
+.search-input.active {
+  display: block;  /* Se muestra */
+  width: 200px;    /* Cambia el ancho según prefieras */
+  opacity: 1;      /* Se vuelve visible */
+}
+
+/* Estilo para el botón de la lupa */
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Animación para el input */
+.search-input {
+  transition: all 0.3s ease;
+}
+
+
+
+/*NUEVO CODIGO PARA LA NUEVA CONFIGURACION DEL SEARCH
+.search-nav {
+  position: absolute; /* O fixed si quieres que se quede fijo mientras haces scroll 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Asegura que esté por encima del carrusel 
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente 
+  color: white; /* Ajusta el color del texto si es necesario 
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  /* Estilos adicionales para el contenedor del navbar 
+}
+*/
+
+.pbusqueda {
+  color: #d3cfcf;
 }

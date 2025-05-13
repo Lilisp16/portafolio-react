@@ -2,14 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ListadoTrabajos from './ListadoTrabajos'
 import Carrusel from './carrusel/Carrusel'
+import SearchNav from './layout/SearchNav'
 
 const Inicio = () => {
   return (
     <div className='home'>
 
 
-  <div>
-  <Carrusel/>
+  <div className='carsel'>
+    
+      <Carrusel/>
   </div>
 
   <section className='lasts-works'>
@@ -18,7 +20,7 @@ const Inicio = () => {
             Transforma tu presencia en línea con un diseño digital para atraer y convertir
           </h2>
           <p>
-          En <strong>BriskYard</strong> , nos especializamos en ofrecer soluciones 
+          En <strong>MAINSYS</strong> , nos especializamos en ofrecer soluciones 
           tecnológicas personalizadas que impulsan el crecimiento y la eficiencia 
           de las pequeñas y medianas empresas (PYMES). Combinamos nuestra 
           experiencia en el desarrollo de Sistemas de Gestión Comercial con 
@@ -28,18 +30,18 @@ const Inicio = () => {
           </p>
 
           <a href="#cardoff">
-          <button>Empieza ya</button>
+          <button> Empieza ya</button>
           </a>
           
       </div>
 
       <div className='freelancing'>
-        <img src="/images/portada.png"/>
+        <img src="/images/portada.jpeg"/>
       </div>
   </section>
 
 
-  <section className='cardoff' id="cardoff">
+ <section className='cardoff' id="cardoff">
   <div className="cardoff-header">
     <h2 className='heading'>Nuestras soluciones</h2>
   </div>
@@ -52,7 +54,8 @@ const Inicio = () => {
       <h4>Desarrollo Web</h4>
       <p>Sitios web atractivos, funcionales y optimizados para ofrecer una experiencia única a tus usuarios.
         </p>
-      <Link to="/servicios">Ver más</Link>
+        
+       <Link to="/servicios#">Ver más</Link>
       </div>
     </div>
 
@@ -65,7 +68,7 @@ const Inicio = () => {
       <h4>Servicio de Hosting</h4>
       <p>Hosting rápido, seguro y confiable para que tu sitio web esté siempre disponible
         </p>
-      <Link to="/servicios">Ver más</Link>
+      <Link to="/servicios/#service_h">Ver más</Link>
       </div>
     </div>
   
@@ -78,7 +81,7 @@ const Inicio = () => {
       <h4>Servicio de Dominio</h4>
       <p>Registro de dominios personalizados, seguros y fáciles de gestionar para tu presencia online.
         </p>
-      <Link to="/servicios">Ver más</Link>
+      <Link to="/servicios/#service_d">Ver más</Link>
       </div>
     </div>
 
@@ -91,14 +94,11 @@ const Inicio = () => {
       </h4>
       <p>Sistemas personalizados para optimizar la gestión y el control comercial.
         </p>
-      <Link to="/servicios">Ver más</Link>
+      <Link to="/servicios/#service_sgc">Ver más</Link>
       </div>
     </div>
 
  
-
-
-    
 
   </section>
 

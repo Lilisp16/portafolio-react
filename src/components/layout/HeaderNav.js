@@ -13,7 +13,8 @@ const HeaderNav = () => {
             </Link>
                 
             </span>
-            <h2>BY</h2> 
+            <img src='/images/reml.png' alt='logo' className='ms_letra'/>
+
         </div>
        
         <nav>
@@ -28,7 +29,7 @@ const HeaderNav = () => {
                     <NavLink to="/servicios">Servicios</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/curriculum">Nosotros</NavLink>
+                    <NavLink to="/info/acerca">Nosotros</NavLink>
                 </li>
                 <li>
                     <NavLink to="/contacto">Contacto</NavLink>
