@@ -1,0 +1,11 @@
+{
+  "greeting": "Bonjour",
+  "welcome": "Bienvenue sur notre site web",
+   "seleccionarIdioma": "Sélectionner la langue",
+   "idiomas": {
+    "es": "Espagnol",
+    "en": "Anglais",
+    "fr": "Français"
+  }
+}
+

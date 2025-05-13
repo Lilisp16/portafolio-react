@@ -1,0 +1,289 @@
+
+.layout {
+ /* width: 100% !important;
+  margin: 100px !important;*/
+  background: none !important;
+}
+
+
+/*body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative; /* Necesario para el pseudo-elemento 
+  overflow-x: hidden; /* Asegura que no haya desbordamiento horizontal 
+  height: 100vh; /* Asegura que el body tenga una altura de toda la ventana 
+}*/
+
+/*body::before {
+  content: ''; /* Necesario para mostrar el pseudoelemento 
+  position: absolute; /* Lo posicionamos de forma absoluta sobre el body 
+  top: 0;
+  left: 0;
+  width: 100%; /* Usamos 100% del ancho de la ventana 
+  height: 100%; /* Usamos 100% de la altura de la ventana 
+  background-image: url('/public/images/des-1.jpeg');  Ruta de la imagen 
+  background-size: cover; /* La imagen cubre toda el área 
+  background-position: center center; /* Centra la imagen 
+  background-attachment: fixed; /* Fija el fondo al hacer scroll 
+  background-repeat: no-repeat; /* Evita la repetición de la imagen 
+  filter: blur(8px); /* Aplica el desenfoque a la imagen 
+  z-index: -1; /* Coloca este fondo por detrás del contenido 
+}*/
+
+.logo2 {
+  display: flex; /* Usamos flexbox para alinear los elementos */
+  align-items: center; /* Centra los logos verticalmente */
+  justify-content: center; /* Centra los logos horizontalmente */
+  gap: 10px; /* Ajusta el espacio entre los logos */
+  position: absolute; /* Si quieres que se superponga en la parte superior */
+  top: 10px;
+  left: 10px;
+  z-index: 100; /* Asegura que el logo esté encima de otros elementos */
+}
+
+.logo2 .by {
+  width: 70px; /* Ajusta el tamaño del logo */
+  height: 70px; /* Asegúrate de que la imagen sea cuadrada */
+  animation: rotateLogo 5s linear infinite; /* Aplica la animación de rotación */
+  transform-origin: center; /* Establece el centro del logo como el punto de rotación */
+}
+
+.ms_letra {
+  width: 80px; /* Ajusta el tamaño del logo */
+  height: 40px; /* Asegúrate de que la imagen sea cuadrada */
+  padding-bottom: 50px;
+}
+
+/* Contenedor de la sección .MHome */
+.MHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenedor */
+  width: 70vw;
+  height: 70vw;
+  max-width: 80vw;
+  max-height: 80vh;
+  overflow: hidden;
+  z-index: 1;
+  perspective: 1200px; /* Ajusta la perspectiva para dar más profundidad */
+}
+
+/* Estilo del mensaje de bienvenida */
+.welcome-message {
+  position: absolute;
+  top: 20px; /* Lo ponemos cerca de la parte superior */
+  left: 50%;
+  transform: translateX(-50%); /* Centrado horizontal */
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2; /* Asegura que esté encima del fondo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto */
+  padding: 10px;
+}
+
+
+
+
+
+
+
+.MHome .video-background {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que el video cubra todo el área del div sin distorsionarse */
+  z-index: -1; /* Coloca el video detrás del contenido */
+
+  
+}
+
+
+
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  /* Alinea los elementos a los extremos (izquierda y derecha) */
+  /*justify-content: center;*/
+  align-items: flex-start;
+  /*text-align: center;*/
+  color: white;
+  padding: 20px;
+  z-index: 10;
+  
+}
+
+
+
+
+.pmain {
+  /*margin-bottom: 30px;*/
+  animation: fadeIn 2s ease-in-out;
+  max-width: 300px; /* Limita el ancho máximo del bloque */
+  padding: 0 60px; /* Opcional: Agrega un poco de espacio interno */
+}
+
+.titulo {
+  color: #cb743a;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  animation: slideUp 1.5s ease-in-out;
+  text-align: justify;
+  font-weight: bold; /* Opcional: hace el título más destacado */
+}
+
+.info222 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  animation: fadeIn 3s ease-in-out;
+  text-align: justify;
+  
+}
+
+.info222 p{
+  padding: 40px 30px 60px 30px; /* Reduce el padding en los lados derecho e izquierdo */
+}
+
+
+/*NUEVOS CAMBIOS PARA INTERACTIVE-BOX*/
+
+/* Contenedor que mantiene el video de fondo y el botón centrado */
+.interactive-box {
+  margin: 50px;
+  position: relative;
+  width: 200px; /* Tamaño del contenedor */
+  height: 200px; /* Tamaño del contenedor */
+  border-radius: 50%; /* Hace que el contenedor sea circular */
+  overflow: hidden; /* Oculta cualquier contenido que sobresalga del círculo */
+  animation: zoomIn 2s ease-in-out; /* Mantiene el efecto de animación */
+}
+
+/* Video en el fondo, cubriendo todo el área del círculo */
+.media-video {
+  border-radius: 20px 20px 20px 40px;
+  position: absolute; /* Hace que el video se posicione dentro del contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+  z-index: -1; /* Coloca el video detrás del botón */
+}
+
+/* El botón centrado dentro del video */
+.start-button {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el botón dentro del contenedor */
+  padding: 30px 5px 30px;
+  font-size: 1rem;
+ 
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1; /* Asegura que el botón esté sobre el video */
+}
+
+/* Efecto de hover para el botón */
+.start-button:hover {
+  transform: scale(1.1) translate(-50%, -50%); /* Efecto de aumento al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+.media-image {
+  width: 30%;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.media-image:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
+/* Estilo para el video de bienvenida */
+.video-welcome {
+  border-radius: 50%;
+  position: fixed;    /* Fija el video en la pantalla */
+  top: 10%;
+  left: 25%;
+  width: 70vmin;        /* El video ocupará todo el ancho de la pantalla */
+  height: 70vmin;       /* El video ocupará toda la altura de la pantalla */
+  object-fit: cover;  /* Asegura que el video cubra toda la pantalla sin deformarse */
+  z-index: 1;         /* Coloca el video detrás del contenido */
+  opacity: 1;         /* Asegura que el video sea visible */
+  transform: scale(0.8);              /* Empieza con un 80% de su tamaño */
+  animation: fadeInZoom 2s ease-out forwards; /* Aplica la animación */
+}
+
+/* Animación de desvanecimiento y zoom */
+@keyframes fadeInZoom {
+  0% {
+    opacity: 1;                      /* Al principio está invisible */
+    transform: scale(1);           /* Empieza más pequeño */
+  }
+  100% {
+    opacity: 0;                      /* Al final se vuelve completamente visible */
+    transform: scale(0.5);             /* Al final regresa al tamaño original */
+  }
+}
+
+
