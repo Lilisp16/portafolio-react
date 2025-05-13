@@ -14,7 +14,7 @@ import Info from '../components/Info';
 
 const MisRutas = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portafolio-react">
     {/* Ruta para MainHome sin Header, Footer ni SearchNav */}
     <Routes>
       <Route path='/MainHome' element={<MainHome />} />
