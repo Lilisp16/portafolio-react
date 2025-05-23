@@ -69,13 +69,20 @@ const Contacto = () => {
           
            {/* Enlace "Ver más" */}
            <div>
-            <a
+            
+          {/*   <a
             href="#"
             onClick={(e) => {
               e.preventDefault(); // evita que la página se desplace arriba
               toggleShowAll();
             }}>
-            {showAll ? "Ver menos" : "Ver más"}</a>
+            {showAll ? "Ver menos" : "Ver más"}</a> */}
+
+            <button
+            onClick={toggleShowAll}
+            className="link-button">
+            {showAll ? "Ver menos" : "Ver más"}
+          </button>
           </div>
 
         </p>
