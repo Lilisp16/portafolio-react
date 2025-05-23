@@ -27,21 +27,20 @@ const Footer = () => {
 
       <div className='todologo'>
           <NavLink to="/inicio"><img 
-            src="/images/byredondo.png" 
+            src={`${process.env.PUBLIC_URL}/images/byredondo.png`} 
             alt="byRem" 
             className="logoa" 
           /></NavLink>
 
           <Link to="/inicio" style={{ textDecoration: 'none' }}><img 
-            src="/images/reml.png" 
+            src={`${process.env.PUBLIC_URL}/images/reml.png`} 
             alt="byRem" 
             className="logoc" 
           />
           
              {/* Agregar el párrafo debajo de los logos */}
        <p className='footer-text'>
-            Nos especializamos en ofrecer soluciones tecnológicas personalizadas que impulsan el crecimiento 
-            y la eficiencia de las pequeñas y medianas empresas (PYMES).
+             Transforma tu presencia en línea con un diseño digital para atraer y convertir
           </p>
           
           </Link>   
@@ -74,18 +73,7 @@ const Footer = () => {
       <div className='language-selector'>
         <span>&copy; copyright 2024 desarrollado por Lili Sanchez </span> 
         
-        
-        {/*   <div className='custom-select'>
-            <img src="/images/idioma.png" 
-              alt="Seleccionar idioma" 
-              className="language-icon"/>
-
-          <select onChange={(e) => cambiarIdioma(e.target.value)} defaultValue="es">
-              <option value="es">{t('idiomas.es')}</option>
-              <option value="en">{t('idiomas.en')}</option>
-              <option value="fr">{t('idiomas.fr')}</option>
-          </select>
-          </div> */}
+     
 
         </div>
 

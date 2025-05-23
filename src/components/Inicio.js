@@ -16,10 +16,8 @@ const Inicio = () => {
 
   <section className='lasts-works'>
     <div className='pinicio'>
-          <h2>
-            Transforma tu presencia en línea con un diseño digital para atraer y convertir
-          </h2>
-          <p>
+          
+         {/* <p>
           En <strong>MAINSYS</strong> , nos especializamos en ofrecer soluciones 
           tecnológicas personalizadas que impulsan el crecimiento y la eficiencia 
           de las pequeñas y medianas empresas (PYMES). Combinamos nuestra 
@@ -27,7 +25,17 @@ const Inicio = () => {
           servicios avanzados de desarrollo web para brindar a nuestros clientes 
           herramientas potentes y escalables que se adaptan a sus necesidades específicas.
           <Link to="/contacto">Comunicate con nosotros</Link>
+          </p>*/} 
+
+          <p>
+          En <strong>MAINSYS</strong>,  brindamos soluciones tecnológicas personalizadas para PYMES, 
+          integrando sistemas de gestión comercial y desarrollo web 
+          avanzado para impulsar su crecimiento y eficiencia.
+          <Link to="/contacto">Comunicate con nosotros</Link>
           </p>
+
+
+
 
           <a href="#cardoff">
           <button> Empieza ya</button>
@@ -36,8 +44,8 @@ const Inicio = () => {
       </div>
 
       <div className='freelancing'>
-        <img src="/images/portada.jpeg"/>
-      </div>
+      <img src={`${process.env.PUBLIC_URL}/images/portada.jpeg`} alt="Portada" />
+    </div>
   </section>
 
 
@@ -48,7 +56,7 @@ const Inicio = () => {
     
     <div className='card'>
     <div className="card-image">
-      <img src="/images/code.jpeg" alt="Desarrollo Web" />
+      <img src={`${process.env.PUBLIC_URL}/images/code.jpeg`} alt="Desarrollo Web" />
     </div>
       <div className='card-uno'>
       <h4>Desarrollo Web</h4>
@@ -62,7 +70,8 @@ const Inicio = () => {
 
     <div className='card'>
     <div className="card-image">
-      <img src="/images/hosting1.jpeg" alt="Desarrollo Web" />
+      <img src={`${process.env.PUBLIC_URL}/images/hosting1.jpeg`} alt="Desarrollo Web" />
+
     </div>
       <div className='card-uno'>
       <h4>Servicio de Hosting</h4>
@@ -75,7 +84,7 @@ const Inicio = () => {
 
     <div className='card'>
     <div className="card-image">
-      <img src="/images/dominio.jpeg" alt="Desarrollo Web" />
+      <img src={`${process.env.PUBLIC_URL}/images/dominio.jpeg`} alt="Desarrollo Web" />
     </div>
       <div className='card-uno'>
       <h4>Servicio de Dominio</h4>
@@ -87,7 +96,7 @@ const Inicio = () => {
 
     <div className='card'>
     <div className="card-image">
-      <img src="/images/dashboard1.jpeg" alt="Desarrollo Web" />
+      <img src={`${process.env.PUBLIC_URL}/images/dashboard1.jpeg`} alt="Desarrollo Web" />
     </div>
       <div className='card-uno'>
       <h4>SGC para PYMES con python y excel

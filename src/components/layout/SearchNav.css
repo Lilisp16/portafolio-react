@@ -40,7 +40,7 @@
 
 /* Botón de hamburguesa */
 .navbar-toggler {
-  margin-bottom: 35px;
+  margin-top: 20px; /* Ajusta este valor para mover el botón hacia arriba */
   background: #93f9f195;
   border: none;
   font-size: 1px;
@@ -69,6 +69,7 @@
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  
 }
 
 
@@ -97,6 +98,7 @@
   justify-content: center;
   align-items: center; /* Centra el icono dentro del botón */
   padding-bottom: 40px;
+
   
 }
 
@@ -289,26 +291,146 @@
 
 
 
-/*NUEVO CODIGO PARA LA NUEVA CONFIGURACION DEL SEARCH
-.search-nav {
-  position: absolute; /* O fixed si quieres que se quede fijo mientras haces scroll 
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10; /* Asegura que esté por encima del carrusel 
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente 
-  color: white; /* Ajusta el color del texto si es necesario 
-}
 
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  /* Estilos adicionales para el contenedor del navbar 
-}
-*/
 
 .pbusqueda {
   color: #d3cfcf;
+}
+
+
+
+
+
+
+/* Media query para pantallas pequeñas (menos de 400px) */
+@media (max-width: 400px) {
+  .search-nav {
+    height: auto; /* Altura automática para adaptarse al contenido */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-input.active {
+    width: 100%;
+    max-width: 250px;
+    font-size: 14px;
+  }
+
+  .search-button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .search-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .offcanvas {
+    width: 100%; /* Ocupa todo el ancho en móviles */
+  }
+
+  /* Cambiar el menú a lista vertical en pantallas pequeñas */
+  .navbar-links {
+    display: block; /* Menú en columna */
+  }
+
+  .navbar-links li {
+    margin-bottom: 10px; /* Espacio entre los elementos */
+  }
+}
+
+
+/* Media query para pantallas pequeñas (menos de 600px) */
+@media (max-width: 600px) {
+  .navbar-links {
+    display: block; /* Menú en columna */
+  }
+
+  .navbar-links li {
+    margin-bottom: 10px; /* Espacio entre los elementos */
+  }
+
+  .search-nav {
+    height: auto; /* Altura automática para adaptarse al contenido */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .search-container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-input.active {
+    width: 100%;
+    max-width: 250px;
+    font-size: 14px;
+  }
+
+  .search-button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .search-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .offcanvas {
+    width: 100%; /* Ocupa todo el ancho en móviles */
+  }
 }

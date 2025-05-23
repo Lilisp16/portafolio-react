@@ -39,7 +39,7 @@ const Contacto = () => {
         <h2>Líneas de Atención</h2>
         <p>
         <img 
-              src="/images/call.png" 
+              src={`${process.env.PUBLIC_URL}/images/call.png`} 
               alt="Seleccionar idioma" 
               className="icon-contact"
             />
@@ -48,7 +48,7 @@ const Contacto = () => {
         </p>
         <p>
         <img 
-              src="/images/wh.png" 
+              src={`${process.env.PUBLIC_URL}/images/wh.png`} 
               alt="Seleccionar idioma" 
               className="icon-contact"
             />
@@ -61,7 +61,7 @@ const Contacto = () => {
         <h2>Preguntas Frecuentes</h2>
         <p>
         <img 
-              src="/images/pregunta-y.png" 
+              src={`${process.env.PUBLIC_URL}/images/pregunta-y.png`}
               alt="Seleccionar idioma" 
               className="icon-contact"
             />
@@ -87,7 +87,7 @@ const Contacto = () => {
     <div className='grupoform'>
 
     <section className='formulario'>
-        <img src='/images/formulario4.jpeg'></img>
+        <img src={`${process.env.PUBLIC_URL}/images/formulario4.jpeg`}  ></img>
         <p>
         ¡Hola,Estamos atentos para responder cualquiera de tus inquietudes!
         </p>
@@ -97,7 +97,7 @@ const Contacto = () => {
 
     <form className='contact' action="mailto:operadorpersonal0@gmail.com">
     <img 
-              src="/images/em.png" 
+              src={`${process.env.PUBLIC_URL}/images/em.png`} 
               alt="Seleccionar idioma" 
               className="icon-contact"
             />

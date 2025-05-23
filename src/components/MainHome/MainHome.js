@@ -33,10 +33,10 @@ const MainHome = () => {
     <div className='logo2'>
     <span className='logospan'>
     <Link to="/inicio">
-        <img src='/images/byredondo.png' alt='logo' className='by'/>
+        <img src={`${process.env.PUBLIC_URL}/images/byredondo.png`} alt='logo' className='by'/>
     </Link>
     </span>
-  {/*  <img src='/images/reml.png' alt='logo' className='ms_letra'/> */}
+  {/*  <img src={`${process.env.PUBLIC_URL}/images/reml.png`} alt='logo' className='ms_letra'/> */}
   </div>
 
 
@@ -46,7 +46,7 @@ const MainHome = () => {
       {/* Video de bienvenida que solo se muestra si el estado showWelcomeVideo es true */}
       {showWelcomeVideo && (
         <video className="video-welcome" autoPlay loop muted>
-          <source src="/images/v3.mp4" type="video/mp4"/>
+          <source src={`${process.env.PUBLIC_URL}/images/v3.mp4`} type="video/mp4"/>
           Your browser does not support the video tag.
         </video>
       )}
@@ -57,7 +57,7 @@ const MainHome = () => {
 
       {/* Video de fondo, sigue siendo visible todo el tiempo */}
       <video className="video-background" autoPlay loop muted>
-        <source src="/images/videoMS.mp4" type="video/mp4"/>
+        <source src={`${process.env.PUBLIC_URL}/images/videoMS.mp4`} type="video/mp4"/>
         Your browser does not support the video tag.
       </video>
 
@@ -68,22 +68,22 @@ const MainHome = () => {
           <h6 className="titulo">
             Transforma tu presencia en línea con un diseño digital para atraer y convertir
           </h6>
-          <p className="info222">
+         {/*<p className="info222">
             En <strong>MainSys</strong>, nos especializamos en ofrecer soluciones 
             tecnológicas personalizadas que impulsan el crecimiento y la eficiencia 
             de las pequeñas y medianas empresas (PYMES).
             
-          </p>
+          </p>*/}
           
         </div>
 
 
         <div className="interactive-box">
 
-        { /*   <img src='/images/diseño2.jpeg' className="media-image" alt="diseño 2" /> */}
-        { /*   <img src='/images/diseño1.jpeg' className="media-image" alt="diseño 1" /> */}
+        { /*   <img src={`${process.env.PUBLIC_URL}/images/diseño2.jpeg' className="media-image" alt="diseño 2" /> */}
+        { /*   <img src={`${process.env.PUBLIC_URL}/images/diseño1.jpeg' className="media-image" alt="diseño 1" /> */}
           <video className="media-video" autoPlay loop muted>
-            <source src="/images/b1.mp4" type="video/mp4" />
+            <source src={`${process.env.PUBLIC_URL}/images/b1.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <button className="start-button" onClick={handleStartClick}>

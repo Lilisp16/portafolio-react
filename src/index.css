@@ -1,5 +1,4 @@
 
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -22,7 +21,6 @@ h2 {
 
 }
 
-
 h3{
   color: #373d43;
 }
@@ -36,8 +34,6 @@ h4, h5, h6 {
   color:#B8860B;
  
 }
-
-
 
 
 code {
@@ -119,8 +115,6 @@ code {
 }
 
 
-
-
 /* Animación del giro */
 @keyframes rotateLogo {
   0% {
@@ -181,7 +175,6 @@ code {
 
 
 
-
 /* AQUI CODIGO PARA EL MOVIMIENTO */
 
 @keyframes lightningEffect {
@@ -212,11 +205,6 @@ code {
 
 
 /*CARRUSEL BACKGROUND */
-
-/*.carsel{
-  background-color: #f9e8f9;
-
-}*/
 
 
 .content {
@@ -424,13 +412,15 @@ padding-top: 1px;
 
 .contact {
   background-image: linear-gradient(to top, #a8ede960 0%, #fed6e317 100%);
-  width: 35%;
+  width: 35px;
   border-radius: 20px;
   margin: 10px auto; /* Centra el formulario */
   padding: 15px; /* Espaciado interno */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para el efecto 3D */
   transform: translateY(2px); /* Desplazamiento para efecto 3D */
   transition: transform 0.3s; /* Transición suave */
+  gap: 20px;
+  margin-bottom: 40px; /* 👈 Esto asegura espacio debajo */
 }
 
 
@@ -498,6 +488,8 @@ padding-top: 1px;
     flex-direction: column; /* Cambia a columna en dispositivos pequeños */
   }
 }
+
+
 
 
 .works{
@@ -588,8 +580,6 @@ padding-top: 1px;
 
 
 
-
-
 .footer-principal{
   background: #f5f5f5;
   margin-block: -20px;
@@ -655,7 +645,6 @@ padding-top: 1px;
 }
 
 
-
 .informacion .link2 {
   justify-content: flex-start;
 }
@@ -672,18 +661,14 @@ padding-top: 1px;
 
 
 
-
 .nav-link2:hover {
   color:   #B8860B; /* Cambia el color al pasar el mouse */
 }
 
 
-
 .link li {
   margin: 5px 0; /* Espacio entre cada li */
 }
-
-
 
 
 
@@ -702,9 +687,6 @@ padding-top: 1px;
   width: 180px;
   right: auto;
 }
-
-
-
 
 
 
@@ -753,8 +735,6 @@ padding-top: 1px;
   outline: none; /* Quitar contorno al seleccionar */
   border-color: #01e3e3; /* Color del borde al hacer foco */
 }
-
-
 
 
 
@@ -826,9 +806,6 @@ padding-top: 1px;
 }
 
 
-
-
-
 /*ESTILOS SUBSERVICIOS*/
 
 
@@ -878,14 +855,14 @@ ul {
 
 /* lasts-works*/
 
-
 .lasts-works {
   display: flex; /* Alinea los elementos en una fila */
-  gap: 10px; /* Espacio entre los elementos, puedes ajustarlo */
-  justify-content: center;      /* Centra los elementos horizontalmente */
+  justify-content: space-between;      /* Centra los elementos horizontalmente */
   align-items: center;          /* Centra los elementos verticalmente */
  /* height: 70vh;                /* Asegura que la sección tenga suficiente altura (opcional, ajusta según necesidad) */
   background-color: #f9e8f9;
+  flex-wrap: wrap; /* Importante para que no se desborden */
+  gap: 10px; /* Espacio entre los elementos, puedes ajustarlo */
 }
 
 .lasts-works button:hover{
@@ -919,6 +896,7 @@ ul {
   justify-content: space-around; /* Distribuye las tarjetas dentro de la sección */
   flex-wrap: wrap; /* Permite que las tarjetas se acomoden en múltiples líneas si es necesario */
   padding-bottom: 60px;
+  gap: 50px;
 }
 
 .cardoff-header {
@@ -1432,15 +1410,6 @@ h1 .heading {
 
 
 
-
-@media (max-width: 768px) {
-  .subservicios4 {
-    grid-template-columns: 1fr; /* Una sola columna */
-  }
-}
-
-
-
 /*estilos PARA PQR ARCHIVO FAG.JS*/
 /* Estilos generales para las preguntas frecuentes */
 .tarjetas {
@@ -1494,3 +1463,577 @@ h1 .heading {
   display: block; /* Mostrar respuesta cuando la pregunta esté abierta */
 }
 
+
+
+
+/* Media query para pantallas más pequeñas (como móviles) */
+@media (max-width: 400px) {
+  .navbar {
+    /* Ajusta el tamaño de la barra de navegación */
+    padding: 10px;
+  }
+
+  .navbar-toggler {
+    /* Ajusta la posición del botón hamburguesa */
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Coloca los elementos del menú uno debajo de otro */
+    text-align: center;
+  }
+
+  .carousel-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Asegura que el contenido del carrusel se ajuste */
+  .carousel-items {
+    width: 100%;
+  }
+
+  .carousel-item {
+    width: 100%;
+    /* Ajusta las imágenes del carrusel */
+    max-width: 100%;
+  }
+
+  /* Ajusta el tamaño de los botones para pantallas más pequeñas */
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Otros estilos responsivos según lo necesites */
+}
+
+/* Media query para pantallas medianas (tabletas) */
+@media (min-width: 400px) and (max-width: 1024px) {
+  .navbar-nav {
+    font-size: 14px;
+  }
+
+  .carousel-item {
+    max-width: 90%;
+  }
+}
+
+/* Media query para pantallas grandes (de escritorio) */
+@media (min-width: 1025px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .carousel-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .carousel-item {
+    width: 25%;
+  }
+
+  .navbar-nav {
+    font-size: 16px;
+  }
+}
+
+
+/*Media query para la pagina de inicio*/
+
+
+@media (max-width: 400px) {
+  .lasts-works {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .pinicio {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .freelancing {
+    width: 100%;
+    text-align: center;
+  }
+
+  .freelancing img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cardoff {
+    padding: 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+
+/*Este  media query para formulario*/
+
+
+@media (max-width: 920px) {
+  .tarjetas-container,
+  .grupoform {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .tarjetas,
+  .formulario,
+  .contact {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .formulario img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact textarea,
+  .contact input[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+/*minifooter*/
+
+@media (max-width: 400px) {
+  .footer0 {
+    grid-template-columns: 1fr; /* Cambia de 4 columnas a 1 */
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .todologo {
+    flex-direction: column; /* Logos uno debajo del otro */
+    align-items: center;
+    justify-content: center;
+    grid-column: span 1;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    max-width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    grid-column: span 1;
+  }
+
+  .informacion {
+    flex-direction: column; /* Enlaces en una sola columna */
+    align-items: center;
+    margin-left: 0;
+    grid-column: span 1;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .logoa, .logoc {
+    width: 80px;
+  }
+
+  .minifooter ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .minifooter .nav-link {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+}
+
+
+
+@media (max-width: 300px) {
+  .footer0 {
+    grid-template-columns: 1fr; /* Cambia de 4 columnas a 1 */
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .todologo {
+    flex-direction: column; /* Logos uno debajo del otro */
+    align-items: center;
+    justify-content: center;
+    grid-column: span 1;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    max-width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    grid-column: span 1;
+  }
+
+  .informacion {
+    flex-direction: column; /* Enlaces en una sola columna */
+    align-items: center;
+    margin-left: 0;
+    grid-column: span 1;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .logoa, .logoc {
+    width: 80px;
+  }
+
+  .minifooter ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .minifooter .nav-link {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .footer0 {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .todologo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 1;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .informacion {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    grid-column: span 1;
+  }
+
+  .link {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .logoa, .logoc {
+    width: 80px;
+  }
+
+  .minifooter ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .minifooter .nav-link {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+
+
+
+/*imagen*/
+
+/* En pantallas menores a 600px */
+@media (max-width: 600px) {
+  .freelancing img {
+    max-width: 60%; /* Más pequeño en pantallas medianas */
+  }
+}
+
+/* En pantallas menores a 400px */
+@media (max-width: 400px) {
+  .freelancing img {
+    max-width: 30%; /* Aún más pequeño si lo necesitas */
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .offered2 {
+    font-size: 14px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    padding: 0 10px; /* Agrega algo de padding para mayor comodidad */
+  }
+
+  .offered2 h2 {
+    font-size: 18px; /* Ajusta el tamaño del título en pantallas pequeñas */
+  }
+}
+
+
+
+/* HEADER: Responsive para pantallas pequeñas (tabletas y móviles grandes) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .header .logo {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .header nav {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-left: 10px;
+  }
+
+  .header li {
+    margin: 10px 0;
+  }
+
+  .header .logo .by {
+    width: 50px;
+    height: 50px;
+  }
+
+  .header .logo .ms_letra {
+    width: 60px;
+    height: 30px;
+    padding-top: 20px;
+  }
+}
+
+/* Muy pequeñas (teléfonos <480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 5px;
+  }
+
+  .header nav ul {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+
+  .header li {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  .header .logo h3 {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+}
+
+
+
+
+
+
+/* LISTADO DE TRABAJOS (PORTAFOLIO) Pantallas menores a 768px (tabletas y móviles grandes) */
+@media (max-width: 768px) {
+  .work-item {
+    flex-basis: 45%; /* Ocupar más espacio por fila */
+    margin: 15px;
+  }
+
+  .work-item .mask {
+    height: 250px; /* Más bajo en pantallas pequeñas */
+  }
+
+  .work-item h2 {
+    font-size: 20px;
+  }
+
+  .work-item h3 {
+    font-size: 14px;
+  }
+
+  .work-item img {
+    width: 110%;
+  }
+
+  .work-item .mask:hover img {
+    width: 130%;
+    margin-right: 20%;
+  }
+}
+
+/* Pantallas menores a 480px (teléfonos pequeños) */
+@media (max-width: 480px) {
+  .works {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-item {
+    flex-basis: 90%;
+    margin: 10px 0;
+  }
+
+  .work-item .mask {
+    height: 200px;
+  }
+
+  .work-item h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .work-item h3 {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .work-item span {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .work-item img {
+    width: 100%;
+  }
+
+  .work-item .mask:hover img {
+    width: 120%;
+    margin-right: 10%;
+  }
+}
+
+/*@media para la vista de SERVICIOS*/
+
+
+/* Para tablets y móviles pequeños */
+@media (max-width: 768px) {
+  .subservicios4 {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna */
+    gap: 20px;
+  }
+
+  .h3sgc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .h3sgc .texto {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .imagen-redonda {
+    width: 100px;
+    height: 100px;
+  }
+
+  .offered h3 {
+    font-size: 18px;
+  }
+
+  .offered p {
+    font-size: 14px;
+  }
+
+  .btn-info {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+/* Para móviles muy pequeños */
+@media (max-width: 400px) {
+  .h3sgc .texto {
+    font-size: 16px;
+  }
+
+  .imagen-redonda {
+    width: 80px;
+    height: 80px;
+  }
+
+  .offered h3 {
+    font-size: 16px;
+  }
+
+  .offered p {
+    font-size: 12px;
+  }
+
+  .btn-info {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

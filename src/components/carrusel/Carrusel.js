@@ -42,7 +42,7 @@ const Carrusel = () => {
         >
           {trabajos.map((trabajo, index) => (
             <div key={trabajo.id} className="carousel-item">
-              <img src={`/images/${trabajo.id}.jpg`} alt={trabajo.nombre} />
+              <img src={`${process.env.PUBLIC_URL}/images/${trabajo.id}.jpg`} alt={trabajo.nombre} />
               <h3>{trabajo.nombre}</h3>
               <p>{trabajo.categorias}</p>
             </div>

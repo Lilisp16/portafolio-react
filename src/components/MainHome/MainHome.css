@@ -6,32 +6,6 @@
 }
 
 
-/*body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative; /* Necesario para el pseudo-elemento 
-  overflow-x: hidden; /* Asegura que no haya desbordamiento horizontal 
-  height: 100vh; /* Asegura que el body tenga una altura de toda la ventana 
-}*/
-
-/*body::before {
-  content: ''; /* Necesario para mostrar el pseudoelemento 
-  position: absolute; /* Lo posicionamos de forma absoluta sobre el body 
-  top: 0;
-  left: 0;
-  width: 100%; /* Usamos 100% del ancho de la ventana 
-  height: 100%; /* Usamos 100% de la altura de la ventana 
-  background-image: url('/public/images/des-1.jpeg');  Ruta de la imagen 
-  background-size: cover; /* La imagen cubre toda el área 
-  background-position: center center; /* Centra la imagen 
-  background-attachment: fixed; /* Fija el fondo al hacer scroll 
-  background-repeat: no-repeat; /* Evita la repetición de la imagen 
-  filter: blur(8px); /* Aplica el desenfoque a la imagen 
-  z-index: -1; /* Coloca este fondo por detrás del contenido 
-}*/
 
 .logo2 {
   display: flex; /* Usamos flexbox para alinear los elementos */
@@ -92,10 +66,6 @@
 
 
 
-
-
-
-
 .MHome .video-background {
   border-radius: 20px;
   position: absolute;
@@ -110,8 +80,6 @@
 }
 
 
-
-
 .intro {
   display: flex;
   flex-direction: row;
@@ -124,8 +92,6 @@
   z-index: 10;
   
 }
-
-
 
 
 .pmain {
@@ -205,13 +171,6 @@
 
 
 
-
-
-
-
-
-
-
 .media-image {
   width: 30%;
   transition: transform 0.3s ease;
@@ -221,7 +180,6 @@
 .media-image:hover {
   transform: scale(1.05);
 }
-
 
 
 /* Animaciones */
@@ -257,8 +215,6 @@
 }
 
 
-
-
 /* Estilo para el video de bienvenida */
 .video-welcome {
   border-radius: 50%;
@@ -287,3 +243,105 @@
 }
 
 
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .MHome {
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .logo2 {
+    flex-direction: column;
+    top: 5px;
+    left: 5px;
+    gap: 5px;
+  }
+
+  .logo2 .by {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ms_letra {
+    width: 60px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .welcome-message {
+    font-size: 1.4rem;
+    padding: 5px;
+    top: 10px;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .pmain {
+    max-width: 90%;
+    padding: 0 10px;
+  }
+
+  .titulo {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .info222 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .info222 p {
+    padding: 20px;
+  }
+
+  .interactive-box {
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  .start-button {
+    font-size: 0.9rem;
+    padding: 20px 5px;
+  }
+
+  .media-image {
+    width: 80%;
+  }
+
+  .video-welcome {
+    width: 90vmin;
+    height: 90vmin;
+    left: 5%;
+    top: 20%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .start-button {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

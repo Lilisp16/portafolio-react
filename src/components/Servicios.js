@@ -47,11 +47,13 @@ const Servicios = () => {
       <section id="service_dw"  className='service_dw'>
           <article className='desarrolloWeb'>
            
-            <p className='offered2'>
+            <div className='offered2'>
             <h2>Desarrollo web</h2>
-              Nos enfocamos en crear diseños atractivos, fáciles de navegar y optimizados para motores de búsqueda (SEO).
-              Trabajamos juntos en cada paso del proyecto, asegurándonos de que el resultado final cumpla con tus expectativas y necesidades.
+            <p>
+              Creamos sitios atractivos, funcionales y optimizados para SEO, 
+              trabajando contigo en cada etapa para asegurar resultados alineados a tus objetivos.
             </p>
+          </div>
 
             <ul className='subservicios'>
               <li>
@@ -158,16 +160,22 @@ const Servicios = () => {
           <span class="texto">
             Sistema de Gestión Comercial para PYMES con Python y Excel
           </span>
-        <img src='/images/Dash.jpeg' class="imagen-redonda" />
+        <img src={`${process.env.PUBLIC_URL}/images/Dash.jpeg`}  class="imagen-redonda" />
         </h3>
-        <p className='offered offered2'>
-          <h3>Gestiona</h3>
-          Herramientas que permiten gestionar clientes, ventas, compras, inventarios, facturación y más, todo centralizado para facilitar la toma de decisiones y mejorar la eficiencia de tu empresa.
-          <button 
-            className="btn-info" 
-            onClick={() => window.open("https://wa.me/3218394396?text=¡Hola!%20Me%20interesa%20una%20asesoría%20gratis", "_blank")}
-          >Más Información</button>
-        </p>
+
+        
+    <div className='offered offered2'>
+      <h3>Gestiona</h3>
+      <p>
+        Herramientas que permiten gestionar clientes, ventas, compras, inventarios, facturación y más, todo centralizado para facilitar la toma de decisiones y mejorar la eficiencia de tu empresa.
+      </p>
+      <button 
+        className="btn-info" 
+        onClick={() => window.open("https://wa.me/3218394396?text=¡Hola!%20Me%20interesa%20una%20asesoría%20gratis", "_blank")}
+      >
+        Más Información
+      </button>
+    </div>
 
         <div className="subservicios4">
           <div className="service-category">
@@ -229,10 +237,6 @@ const Servicios = () => {
               <li>Actualizaciones periódicas con nuevas funcionalidades</li>
             </ul>
           </div>
-
-
-        
-
 
 
         </div>

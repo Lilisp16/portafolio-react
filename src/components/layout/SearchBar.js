@@ -39,7 +39,7 @@ const SearchBar = () => {
       />
       
       <button type="button" className="search-button" onClick={toggleSearch}>
-        <img src="/images/lupa.png" alt="Buscar" className="search-icon" />
+        <img src={`${process.env.PUBLIC_URL}/images/lupa.png`} alt="Buscar" className="search-icon" />
       </button>
 
       <button type="button" className="search-submit" onClick={handleSearchSubmit}>

@@ -9,11 +9,11 @@ const HeaderNav = () => {
         <div className='logo'>
             <span className='logospan'>
             <Link to="/">
-                <img src='/images/byredondo.png' alt='logo' className='by'/>
+                <img src={`${process.env.PUBLIC_URL}/images/byredondo.png`}  alt='logo' className='by'/>
             </Link>
                 
             </span>
-            <img src='/images/reml.png' alt='logo' className='ms_letra'/>
+            <img src={`${process.env.PUBLIC_URL}/images/reml.png`}  alt='logo' className='ms_letra'/>
 
         </div>
        

@@ -114,7 +114,7 @@ const handleResultClick = (id) => {
               handleSearch();  // Ejecutar la búsqueda al hacer clic en el botón
               toggleSearch();  // Alternar el estado de búsqueda
             }}>
-            <img src="/images/lupa.png" alt="Buscar" className="search-icon" />
+            <img src={`${process.env.PUBLIC_URL}/images/lupa.png`} alt="Buscar" className="search-icon" />
             </button>
 
            
@@ -140,15 +140,15 @@ const handleResultClick = (id) => {
         </div>
 
 
-        {/*botón de hamburguesa */}
+        {/*botón de hamburguesa 
         <button className="navbar-toggler" onClick={toggleMenu}>
-        <img src="/images/menu-principal.png" alt="Menu" className="navbar-toggler-icon" />
-        </button>
+        <img src={`${process.env.PUBLIC_URL}/images/menu-principal.png`} alt="Menu" className="navbar-toggler-icon" />
+        </button>*/}
 
       </div>
 
     
-      {/* Menú offcanvas (lateral) */}
+      {/* Menú offcanvas (lateral) 
       <div className={`offcanvas ${isOpen ? 'open' : ''}`}>
         <div className="offcanvas-header">
           <h5 className="offcanvas-title">MAINSYS</h5>
@@ -176,7 +176,7 @@ const handleResultClick = (id) => {
             />
           </form>
         </div>
-      </div>
+      </div> */}
 
     </nav>
   );
