@@ -35,8 +35,6 @@ const Inicio = () => {
           </p>
 
 
-
-
           <a href="#cardoff">
           <button> Empieza ya</button>
           </a>

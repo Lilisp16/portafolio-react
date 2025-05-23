@@ -58,9 +58,9 @@ const Footer = () => {
           </ul>
           <ul className='link'>
             <h4>Recursos importantes</h4>
-            <li className='link2'><a href="https://www.figma.com/community" className="nav-link2 px-2 text-body-secondary" target="_blank">Figma community</a></li>
-            <li className='link2'><a href="https://templated.co/" className="nav-link2 px-2 text-body-secondary" target="_blank">Templetes</a></li>
-            <li className='link2'><a href="https://www.hostinger.co/tutoriales/que-es-un-hosting#Hosting_Compartido" className="nav-link2 px-2 text-body-secondary" target="_blank">Qué es hosting y cómo funciona</a></li>
+            <li className='link2'><a href="https://www.figma.com/community" className="nav-link2 px-2 text-body-secondary" target="_blank" rel="noopener noreferrer">Figma community</a></li>
+            <li className='link2'><a href="https://templated.co/" className="nav-link2 px-2 text-body-secondary" target="_blank" rel="noopener noreferrer">Templetes</a></li>
+            <li className='link2'><a href="https://www.hostinger.co/tutoriales/que-es-un-hosting#Hosting_Compartido" className="nav-link2 px-2 text-body-secondary" target="_blank" rel="noopener noreferrer">Qué es hosting y cómo funciona</a></li>
           </ul>
         </div>
 

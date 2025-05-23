@@ -126,10 +126,12 @@ const handleResultClick = (id) => {
                   {searchResults.map((result) => (
                     <li key={result.id}>
                       {/* Usamos el botón para redirigir */}
-                      <a href="#" 
-                      onClick={(e) => {e.preventDefault(); handleResultClick(result.id)}}>
+                     <button 
+                        onClick={() => handleResultClick(result.id)} 
+                        className="link-button"
+                      >
                         {result.name}
-                      </a>
+                      </button>
                     </li>
                   ))}
                 </ul>

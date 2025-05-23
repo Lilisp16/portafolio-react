@@ -160,7 +160,7 @@ const Servicios = () => {
           <span class="texto">
             Sistema de Gestión Comercial para PYMES con Python y Excel
           </span>
-        <img src={`${process.env.PUBLIC_URL}/images/Dash.jpeg`}  class="imagen-redonda" />
+        <img src={`${process.env.PUBLIC_URL}/images/Dash.jpeg`} alt=""  class="imagen-redonda" />
         </h3>
 
         

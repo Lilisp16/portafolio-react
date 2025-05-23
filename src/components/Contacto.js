@@ -15,19 +15,18 @@ const Contacto = () => {
    
 
    // Función para manejar el envío del formulario
-   const generateMailto = (event) => {
-    event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+  // const generateMailto = (event) => {
+  //  event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
 
     // Obtener los valores de los campos del formulario
-    const asunto = document.getElementById('asunto').value;
-    const mensaje = document.getElementById('mensaje').value;
+   // const asunto = document.getElementById('asunto').value;
+   // const mensaje = document.getElementById('mensaje').value;
     
     // Construir el enlace mailto con los datos del formulario
-    const mailtoLink = `mailto:operadorpersonal0@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(mensaje)}`;
+   // const mailtoLink = `mailto:operadorpersonal0@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(mensaje)}`;
 
     // Redirigir al enlace mailto: para abrir el cliente de correo
-    window.location.href = mailtoLink;
-  };
+   // window.location.href = mailtoLink;};
 
 
   return (
