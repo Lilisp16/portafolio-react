@@ -70,10 +70,15 @@ const Contacto = () => {
           
            {/* Enlace "Ver más" */}
            <div>
-            <a href="#" onClick={toggleShowAll}>
-              {showAll ? "Ver menos" : "Ver más"}
-            </a>
+            <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault(); // evita que la página se desplace arriba
+              toggleShowAll();
+            }}>
+            {showAll ? "Ver menos" : "Ver más"}</a>
           </div>
+
         </p>
           {/* Mostrar la sección FAQ cuando el estado 'showAll' sea verdadero */}
       {showAll && <FAQ />}
@@ -87,7 +92,7 @@ const Contacto = () => {
     <div className='grupoform'>
 
     <section className='formulario'>
-        <img src={`${process.env.PUBLIC_URL}/images/formulario4.jpeg`}  ></img>
+        <img src={`${process.env.PUBLIC_URL}/images/formulario4.jpeg`}   alt=""></img>
         <p>
         ¡Hola,Estamos atentos para responder cualquiera de tus inquietudes!
         </p>
@@ -95,21 +100,13 @@ const Contacto = () => {
 
 
 
-    <form className='contact' action="mailto:operadorpersonal0@gmail.com">
+   {/* <form className='contact' action="mailto:operadorpersonal0@gmail.com">
     <img 
               src={`${process.env.PUBLIC_URL}/images/em.png`} 
               alt="Seleccionar idioma" 
               className="icon-contact"
             />
         <h3>Escríbenos un mensaje</h3>
-
-
-       {/* <input type="text" placeholder='Nombre' />
-          {/*<input type="text" placeholder='Apellidos' />
-        <input type="text" placeholder='Email' />
-        <textarea placeholder='Asunto' />
-        <input type="submit" value="Enviar formulario" />*/}
-
 
             <textarea
             id="asunto"
@@ -125,18 +122,45 @@ const Contacto = () => {
             required
           ></textarea>
 
-          {/* Botón para enviar el formulario */}
+         Botón para enviar el formulario 
           <input
             type="submit"
-            value="Enviar formulario"
+            value="Enviar"
             onClick={generateMailto} // Llamamos a la función cuando se hace clic
           />
+    </form>*/}
+
+
+    <form 
+      className='contact'
+      action="https://formspree.io/f/xyzabcde" // <-- Reemplaza con tu URL real
+      method="POST">
+      <img 
+        src={`${process.env.PUBLIC_URL}/images/em.png`} 
+        alt="Icono de contacto por correo" 
+        className="icon-contact"
+      />
+      <h3>Escríbenos un mensaje</h3>
+
+      <input 
+        type="text" 
+        name="nombre" 
+        placeholder="Tu nombre" 
+        required  />
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Tu correo electrónico" 
+        required />
+      <textarea 
+        name="mensaje" 
+        placeholder="Escribe tu mensaje aquí..." 
+        rows="5" 
+        required ></textarea>
+      <button type="submit">Enviar</button>
     </form>
 
-
     </div>
-
-
   </div>
   )
 }

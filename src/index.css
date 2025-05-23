@@ -315,12 +315,12 @@ input[type="submit"]:active {
 
 
 
-.contact{
+/*.contact{
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   width: 40%;
   border-radius: 20px;
-  margin: 0 auto; /* Centra el contenedor en la página */
-  padding: 20px; /* Agrega un poco de espacio interno */
+  margin: 0 auto; /* Centra el contenedor en la página 
+  padding: 20px; /* Agrega un poco de espacio interno 
 }
 
 .contact h4{
@@ -329,9 +329,75 @@ input[type="submit"]:active {
 
 form {
   display: flex;
-  flex-direction: column; /* Alinea los elementos en columna */
-  align-items: center; /* Centra horizontalmente los elementos */
+  flex-direction: column; /* Alinea los elementos en columna 
+  align-items: center; /* Centra horizontalmente los elementos 
+}*/
+
+/*ESTILOS FORMULARIO CONTACTO */
+
+.contact {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  width: 40%;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.contact h4 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
+}
+
+.icon-contact {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact {
+    width: 90%;
+  }
+}
+
+
+
+
+
 
 /*TARJETAS DE CONTACTO*/
 

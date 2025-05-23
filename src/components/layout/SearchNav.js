@@ -1,7 +1,7 @@
 // SearchNav.js
 import React, { useState } from 'react';
 import './SearchNav.css';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';  // Asegúrate de importar 'useNavigate'
 
 
@@ -17,7 +17,7 @@ const SearchNav = () => {
 
   const navigate = useNavigate();  // Usa 'useNavigate' en lugar de 'useHistory'
 
-  const toggleMenu = () => setIsOpen(!isOpen);  // Función para alternar el offcanvas
+ // const toggleMenu = () => setIsOpen(!isOpen);  // Función para alternar el offcanvas
   const toggleSearch = () => setIsSearchOpen(!isSearchOpen);  // Alternar el estado de búsqueda
   
   const toggleDropdown = (e) => {
@@ -126,7 +126,8 @@ const handleResultClick = (id) => {
                   {searchResults.map((result) => (
                     <li key={result.id}>
                       {/* Usamos el botón para redirigir */}
-                      <a onClick={() => handleResultClick(result.id)}>
+                      <a href="#" 
+                      onClick={(e) => {e.preventDefault(); handleResultClick(result.id)}}>
                         {result.name}
                       </a>
                     </li>
