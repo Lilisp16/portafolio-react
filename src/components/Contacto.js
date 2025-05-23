@@ -139,7 +139,7 @@ const Contacto = () => {
 
     <form 
       className='contact'
-      action="https://formspree.io/f/xyzabcde" // <-- Reemplaza con tu URL real
+      action="https://formspree.io/f/xgvkbbwe" 
       method="POST">
       <img 
         src={`${process.env.PUBLIC_URL}/images/em.png`} 
