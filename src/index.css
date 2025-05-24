@@ -273,7 +273,7 @@ textarea{
   max-width: 250px; /* Establece un ancho máximo si es necesario 
   background-color: rgba(255, 255, 255, 0.452); /* Color de fondo con transparencia 
   border: none; /* Sin borde por defecto */
-  border-bottom: 2px solid transparent; /* Borde inferior transparente por defecto 
+ /* border-bottom: 2px solid transparent; /* Borde inferior transparente por defecto 
   transition: border-color 300ms; /* Suave transición para el cambio de color 
   outline: none; /* Elimina el contorno predeterminado al enfocar 
   border-radius: 5px; /* Esquinas redondeadas 
@@ -341,6 +341,7 @@ form {
   margin: 30px auto;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
 }
 
 .contact h4 {
@@ -1235,6 +1236,18 @@ p {
 /*SECCION DE SERVICIOS DE DOMINIO */
 
 /* Sección de servicios */
+.intro-service {
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
 .service_d {
   display: flex;
   flex-wrap: wrap;
@@ -2158,5 +2171,21 @@ h1 .heading {
   .offered2 h2,
   .offered2 h3 {
     font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .subservicios {
+    grid-template-columns: 1fr; /* Una sola columna */
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
