@@ -263,21 +263,21 @@ button{
   color: rgb(78, 76, 76);
 }
 
-/* codigo para el formulario */
+/* codigo para el formulario 
 
 input[type="text"],
 textarea{
   padding: 15px;
   margin-top: 25px;
-  width: 100%; /* Usa el 100% del contenedor padre */
-  max-width: 250px; /* Establece un ancho máximo si es necesario */
-  background-color: rgba(255, 255, 255, 0.452); /* Color de fondo con transparencia */
+  width: 100%; /* Usa el 100% del contenedor padre 
+  max-width: 250px; /* Establece un ancho máximo si es necesario 
+  background-color: rgba(255, 255, 255, 0.452); /* Color de fondo con transparencia 
   border: none; /* Sin borde por defecto */
-  border-bottom: 2px solid transparent; /* Borde inferior transparente por defecto */
-  transition: border-color 300ms; /* Suave transición para el cambio de color */
-  outline: none; /* Elimina el contorno predeterminado al enfocar */
-  border-radius: 5px; /* Esquinas redondeadas */
-}
+  border-bottom: 2px solid transparent; /* Borde inferior transparente por defecto 
+  transition: border-color 300ms; /* Suave transición para el cambio de color 
+  outline: none; /* Elimina el contorno predeterminado al enfocar 
+  border-radius: 5px; /* Esquinas redondeadas 
+}*/
 
 input[type="text"]:focus,
 textarea:focus {
@@ -337,7 +337,6 @@ form {
 
 .contact {
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-  width: 40%;
   border-radius: 20px;
   margin: 30px auto;
   padding: 20px;
@@ -368,7 +367,6 @@ form {
 }
 
 .contact button {
-  background-color: #007bff;
   color: white;
   padding: 12px 20px;
   border: none;
