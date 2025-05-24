@@ -1149,7 +1149,7 @@ h4 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 28px;
   color: #555;
 }
 
@@ -1209,7 +1209,7 @@ p {
 
 
 p {
-  font-size: 14px;
+  font-size: 28px;
   color: #555;
 }
 
@@ -1241,20 +1241,21 @@ p {
 }
 
 .cards-container {
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-top: 30px;
 }
 
 
 .service_d {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  background-color: #27ae5f88; /* Verde para Dominio */
+  flex-direction: column;
+  align-items: center;
+  background-color: #27ae5f88;
   padding: 40px;
+  text-align: center;
 }
 
 .service-card {

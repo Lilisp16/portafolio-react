@@ -123,7 +123,7 @@ const Servicios = () => {
       <section id="service_d" className='service_d'>
       <div className="intro-service">
         <h2 className='h2d'>Dominio y Email Empresarial</h2>
-        <p className='offered'>
+        <p>
         Ofrecemos servicios completos para adquirir tu dominio personalizado y cuentas de correo profesional
         </p>
       </div>
