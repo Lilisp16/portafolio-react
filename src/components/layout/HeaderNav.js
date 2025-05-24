@@ -13,7 +13,7 @@ const HeaderNav = () => {
             </Link>
                 
             </span>
-            <img src={`${process.env.PUBLIC_URL}/images/reml.png`}  alt='logo' className='ms_letra'/>
+         {/*   <img src={`${process.env.PUBLIC_URL}/images/reml.png`}  alt='logo' className='ms_letra'/>*/} 
 
         </div>
        

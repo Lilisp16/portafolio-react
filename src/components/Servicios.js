@@ -48,10 +48,9 @@ const Servicios = () => {
           <article className='desarrolloWeb'>
            
             <div className='offered2'>
-            <h2>Desarrollo web</h2>
+            <h3 className='h3sgc'>Desarrollo web</h3>
             <p>
-              Creamos sitios atractivos, funcionales y optimizados para SEO, 
-              trabajando contigo en cada etapa para asegurar resultados alineados a tus objetivos.
+              Creamos sitios atractivos, funcionales y optimizados para SEO, trabajando contigo en cada etapa para asegurar resultados alineados a tus objetivos.
             </p>
           </div>
 
@@ -123,10 +122,11 @@ const Servicios = () => {
 
       <section id="service_d" className='service_d'>
 
-      <p className='offered'>
+      
         <h2 className='h2d'>Dominio y Email Empresarial</h2>
+        <p className='offered'>
         Ofrecemos servicios completos para adquirir tu dominio personalizado y cuentas de correo profesional
-      </p>
+        </p>
         <article className='dominio'>
           <div className="service-card">
             <div className="icon">
