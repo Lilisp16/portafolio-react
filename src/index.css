@@ -315,23 +315,7 @@ input[type="submit"]:active {
 
 
 
-/*.contact{
-  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-  width: 40%;
-  border-radius: 20px;
-  margin: 0 auto; /* Centra el contenedor en la página 
-  padding: 20px; /* Agrega un poco de espacio interno 
-}
 
-.contact h4{
-  margin-left: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column; /* Alinea los elementos en columna 
-  align-items: center; /* Centra horizontalmente los elementos 
-}*/
 
 /*ESTILOS FORMULARIO CONTACTO */
 
@@ -381,8 +365,7 @@ form {
 .link-button {
   background: none;
   border: none;
-  color: blue;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   cursor: pointer;
   font: inherit;
   padding: 0;
@@ -390,7 +373,8 @@ form {
 
 
 .contact button:hover {
-  background-color: #0056b3;
+  background-color: #030f1a;
+  color: #b8860b;
 }
 
 .icon-contact {
