@@ -1882,7 +1882,7 @@ h1 .heading {
 /* En pantallas menores a 400px */
 @media (max-width: 400px) {
   .freelancing img {
-    max-width: 60%; /* Aún más pequeño si lo necesitas */
+    max-width: 100%; /* Aún más pequeño si lo necesitas */
   }
 }
 
