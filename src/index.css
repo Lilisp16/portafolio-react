@@ -948,8 +948,8 @@ ul {
 }
 
 .freelancing img{
-  width: 440px;
-  height: 400px;
+ /* width: 440px;
+ /* height: 400px;*/
   border-radius: 10px;
 
 }
@@ -1645,8 +1645,8 @@ h1 .heading {
 
   .freelancing img {
     max-width: 100%;
-    height: auto;
-    max-height: 200px; /* Ajusta */
+   /* height: auto;*/
+   /* max-height: 200px; /* Ajusta */
     object-fit: cover; /* Recorta si es necesario */
   }
 
