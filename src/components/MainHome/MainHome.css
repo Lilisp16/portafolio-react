@@ -169,8 +169,9 @@
 
 /* Hover para escritorio */
 .start-button:hover {
-  background-color: #4d4dff;
+  background-color: #2bfdf2;
   transform: scale(1.1) translate(-50%, -50%);
+  color:#cb743a;;
 }
 
 
