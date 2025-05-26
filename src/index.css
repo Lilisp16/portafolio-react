@@ -1054,6 +1054,7 @@ ul {
 }
 
 .card-uno p {
+  font-size: 18px;
   margin: 10px 0; /* Espaciado entre el párrafo y el enlace */
   color: white;
 }
@@ -1661,6 +1662,8 @@ h1 .heading {
   .freelancing img {
     max-width: 100%;
     height: auto;
+    max-height: 300px; /* Ajusta */
+    object-fit: cover; /* Recorta si es necesario */
   }
 
   .cardoff {

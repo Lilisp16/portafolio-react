@@ -58,7 +58,7 @@ const Inicio = () => {
     </div>
       <div className='card-uno'>
       <h4>Desarrollo Web</h4>
-      <p>Sitios web atractivos, funcionales y optimizados para ofrecer una experiencia única a tus usuarios.
+      <p className='card-p'>Sitios web atractivos, funcionales y optimizados para ofrecer una experiencia única a tus usuarios.
         </p>
         
        <Link to="/servicios#">Ver más</Link>
@@ -73,7 +73,7 @@ const Inicio = () => {
     </div>
       <div className='card-uno'>
       <h4>Servicio de Hosting</h4>
-      <p>Hosting rápido, seguro y confiable para que tu sitio web esté siempre disponible
+      <p className='card-p'>Hosting rápido, seguro y confiable para que tu sitio web esté siempre disponible
         </p>
       <Link to="/servicios/#service_h">Ver más</Link>
       </div>
@@ -86,7 +86,7 @@ const Inicio = () => {
     </div>
       <div className='card-uno'>
       <h4>Servicio de Dominio</h4>
-      <p>Registro de dominios personalizados, seguros y fáciles de gestionar para tu presencia online.
+      <p className='card-p'>Registro de dominios personalizados, seguros y fáciles de gestionar para tu presencia online.
         </p>
       <Link to="/servicios/#service_d">Ver más</Link>
       </div>
@@ -99,7 +99,7 @@ const Inicio = () => {
       <div className='card-uno'>
       <h4>SGC para PYMES con python y excel
       </h4>
-      <p>Sistemas personalizados para optimizar la gestión y el control comercial.
+      <p className='card-p'>Sistemas personalizados para optimizar la gestión y el control comercial.
         </p>
       <Link to="/servicios/#service_sgc">Ver más</Link>
       </div>
