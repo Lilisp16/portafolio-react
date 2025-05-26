@@ -42,7 +42,7 @@ const Inicio = () => {
       </div>
 
       <div className='freelancing'>
-      <img src={`${process.env.PUBLIC_URL}/images/portada.jpeg`} alt="Portada" />
+      <img src={`${process.env.PUBLIC_URL}/images/homre.png`} alt="Portada" />
     </div>
   </section>
 
