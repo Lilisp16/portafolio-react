@@ -1646,7 +1646,7 @@ h1 .heading {
   .freelancing img {
     max-width: 100%;
     height: auto;
-    max-height: 300px; /* Ajusta */
+    max-height: 200px; /* Ajusta */
     object-fit: cover; /* Recorta si es necesario */
   }
 
