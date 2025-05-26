@@ -52,9 +52,9 @@ const Footer = () => {
         <div className='informacion'>
           <ul className='link'>
             <h4>Navegacion</h4>
-            <li className='link2'><a href="/portafolio" className="nav-link2 px-2 text-body-secondary">Portafolio</a></li>
-            <li className='link2'><a href="/servicios" className="nav-link2 px-2 text-body-secondary">Servicios</a></li>
-            <li className='link2'><a href="/contacto" className="nav-link2 px-2 text-body-secondary">Contacto</a></li>
+            <li className='link2'><Link href="/portafolio" className="nav-link2 px-2 text-body-secondary">Portafolio</Link></li>
+            <li className='link2'><Link href="/servicios#" className="nav-link2 px-2 text-body-secondary">Servicios</Link></li>
+            <li className='link2'><Link href="/contacto" className="nav-link2 px-2 text-body-secondary">Contacto</Link></li>
           </ul>
           <ul className='link'>
             <h4>Recursos importantes</h4>

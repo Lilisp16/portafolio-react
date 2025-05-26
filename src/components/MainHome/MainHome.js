@@ -87,7 +87,7 @@ const MainHome = () => {
             Your browser does not support the video tag.
           </video>
           <button className="start-button" onClick={handleStartClick}>
-            Empezar
+            Entrar
           </button>
 
         </div>
